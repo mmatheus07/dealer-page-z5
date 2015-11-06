@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <!-- jQuery library (served from Google) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="lib/jquery-bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="lib/jquery-bxslider/jquery.bxslider.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
     <script src="js/script.js"></script>
   </head>
@@ -17,7 +21,7 @@
       </div><!--.container-->
     </header>
     <div class="gray">
-    </div>
+    </div><!--.gray-->
     <div class="container part-one">
       <div class="row">
         <div class="col-md-6 col-md-push-6 cellphone jumbotron vertical-center description top">
@@ -34,6 +38,28 @@
           </div><!--.icons-->
         </div>
       </div><!--.row-->
-    </div><!--.container-->
+    </div><!--part-one-->
+    <div class="container part-two">
+      <div class="row">
+        <div class="col-md-8 jumbotron">
+          <h3><span class="bold">Não perca nenhum movimento</span></h3>
+          <h4>Capture os momentos que passam em um piscar de olhos com nosso autofoco mais rápido</h4>
+          <p class="text-one">
+            Com o Xperia Z5, você captura as melhores oportunidades de foto que a vida tem a oferecer,
+            antes que elas passem por você. Com o disparo rápido (autofoco híbrido), nosso melhor celular
+            com câmera já lançado reúne velocidade e precisão. Combinado com os 23 MP e um avançado
+            zoom de imagem que aumenta em até cinco vezes, o Xperia Z5 é capaz de capturar até os
+            momentos mais passageiros com uma clareza impressionante e na primeira tentativa.
+          </p>
+        </div>
+      </div>
+      <div class="container carrossel" style="max-width:941px; padding:0 45px;">
+        <ul class="bxslider" style="align:center;">
+          <li><img src="img/carrossel1.jpg" /></li>
+          <li><img src="img/carrossel2.jpg" /></li>
+          <li><img src="img/carrossel3.jpg" /></li>
+        </ul>
+      </div>
+    </div><!--part-two-->
   </body>
 </html>

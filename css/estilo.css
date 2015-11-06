@@ -21,7 +21,7 @@ div.cellphone {
 
 span.bold {
   font-weight: 600;
-  font-size: 33px;
+  font-size: 27px;
   color: #000000;
   display: inline-block;
   margin-bottom: 5px;
@@ -45,21 +45,31 @@ span.bold-title {
   border-bottom-left-radius: 3px;
   border-color: #bfbfbf; }
 
-div.description {
+div.jumbotron {
   background-color: #ffffff;
 }
 
 p.text-one {
-  font-size: 18px;
+  font-size: 15px;
   color: #000000;
 }
 
 p.option-color {
-  font-size: 19px;
+  font-size: 16px;
+  color: #565656;
 }
 
 div.part-one {
   margin-top: 37px;
+}
+
+.bx-wrapper {
+  border: none;
+  box-shadow: none;
+}
+
+.container {
+  max-width: 941px;
 }
 
 @media screen and (max-width: 991px) {
@@ -73,5 +83,8 @@ div.part-one {
   }
   div.top {
     margin-bottom: 0;
+  }
+  div.carrossel {
+    padding: 0 10px;
   }
   }
