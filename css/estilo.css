@@ -6,6 +6,7 @@ header {
 div.gray {
   height: 25px;
   background-color: #cdcdcd;
+  margin-bottom: 80px;
 }
 
 .container {
@@ -42,6 +43,10 @@ div.photos img {
   max-width: 100%;
 }
 
+div.photos {
+  margin-top: 15px;
+}
+
 div.invert-text {
   text-align: right;
 }
@@ -55,8 +60,25 @@ div.middletext span {
   height: 195px;
 }
 
+.middletext a {
+  font-size: 16px;
+}
+
+.opcoes-de-cor p {
+  font-size: 14px;
+  color: #565656;
+}
+
 span.icontwo {
   padding-top:64px;
+}
+
+p.confere {
+  font-size: 12px;
+}
+
+.black {
+  color: #000000;
 }
 
 span.topicons {
@@ -102,10 +124,77 @@ div.threeicons {
   margin-top: 50px;
 }
 
+tr {
+  border-bottom: 1px solid #000000;
+}
+
+td a {
+  font-size: 12px;
+}
+
+div.line {
+  height: 7px;
+  background-color: #f8f8fa;
+  margin-bottom: 68px;
+}
+
+td.table-text {
+  padding-left: 15px;
+}
+
+table.measures {
+  background-color: #f1f4f9;
+  padding: 0;
+}
+
+.measures tr {
+  border-bottom: 0;
+}
+
+div.icons-bottom {
+  margin-bottom: 68px;
+}
+
+table p {
+  font-size: 14px;
+}
+
+div.box {
+  margin-bottom: 40px;
+}
+
+div.start {
+  margin-bottom: 15px;
+}
+
+a.model {
+  color: #7d62b0;
+  font-size: 22px;
+}
+
+div.text-start {
+  margin-top: 75px;
+}
+
 @media screen and (max-width: 991px) {
   .center {
     text-align: center; }
   div.opcoes-de-cor {
     text-align: center;
+  }
+  div.measure {
+    margin-top: 30px;
+  }
+  table {
+    width: 100%;
+  }
+  div.middletext {
+    margin-top: 0;
+  }
+  div.middle1 {
+    margin-top: 0;
+  }
+  div.photo-product {
+    margin-bottom: 60px;
   }
 }
