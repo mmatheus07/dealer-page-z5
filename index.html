@@ -9,6 +9,7 @@
     <script src="lib/jquery-bxslider/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
     <link href="lib/jquery-bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/bookmarkscroll.js"></script>
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
     <script src="js/script.js"></script>
   </head>
@@ -27,7 +28,13 @@
         <div class="row">
           <div class="col-md-6 col-md-push-6 photo-product">
             <img src="img/celular1.jpg" />
-          </div>
+            <div class="social">
+              <a href="https://www.facebook.com/SonyBrasil" target="_blank"><img src="img/bottomface.png" /></a>
+              <a href="https://plus.google.com/" target="_blank"><img src="img/bottomgplus.png" /></a>
+              <a href="https://pt.pinterest.com/canalsonybr/" target="_blank"><img src="img/bottompint.png" /></a>
+              <a href="https://twitter.com/sonybrasil" target="_blank"><img src="img/bottomtt.png" /></a>
+            </div><!--.social-->
+          </div><!--.photo-product-->
           <div class="col-md-6 col-md-pull-6 text-start">
             <h4 class="center"><a target="_blank" href="#" class="model"><strong>Xperia™ Z5</strong></a></h4>
             <h3 class="center"><strong>Eu posso tirar a melhor foto com o disparo mais rápido</strong></h3>
@@ -40,15 +47,19 @@
           </div>
         </div>
       </div><!--.product-->
-      <div class="social" style="height:500px;">
+      <!--<div class="maybe">
         <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/like.php?href=https://www.facebook.com/SonyBrasil&layout=standard&show_faces=false&width=380&action=like&colorscheme=light&height=25" style="border:none; overflow:hidden; width:250px; height:25px;"></iframe>
         <a href="https://twitter.com/sonybrasil" class="twitter-follow-button" data-show-count="false" data-lang="pt" data-show-screen-name="false">Seguir @sonybrasil</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>--><!--.maybe-->
+      <div class="anchor">
+        <a href="javascript:bookmarkscroll.scrollTo('recursos')"><img src="img/anchor3.png" id="imagem1" onmouseup="mudaImagem(1)" onmousedown="mudaImagem2(1)" /></a>
+        <a href="javascript:bookmarkscroll.scrollTo('especificacoes')"><img src="img/anchor2.png" id="imagem3" onmouseup="mudaImagem3(1)" onmousedown="mudaImagem4(1)" /></a>
       </div>
       <div class="box-slider">
         <div class="row start">
           <div class="col-md-8">
-            <h3><strong>Não perca nenhum movimento</strong></h3>
+            <h3 id="recursos"><strong>Não perca nenhum movimento</strong></h3>
             <h4>Capture os momentos que passam em um piscar de olhos com nosso autofoco mais rápido</h4>
             <p class="black">
               Com o Xperia Z5, você captura as melhores oportunidades de foto que a vida tem a oferecer,
@@ -95,20 +106,36 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 readmore">
-            <span class="middleicons"><img src="img/iconmiddle1.jpg" /></span>
-            <p class="mini-text">
-              "Conferimos o foco do Xperia Z5 e ele é incrivelmente rápido, tanto quando
-              usamos o foco por toque quanto com o autofoco."<br />
-              <a target="_blank" href="#">Leia a avaliação completa da Pocket-lint</a>
-            </p>
+            <table>
+              <tr class="noborder">
+                <td>
+                  <span class="middleicons"><img src="img/iconmiddle1.jpg" /></span>
+                </td>
+                <td>
+                  <p class="mini-text">
+                    "Conferimos o foco do Xperia Z5 e ele é incrivelmente rápido, tanto quando
+                    usamos o foco por toque quanto com o autofoco."<br />
+                    <a target="_blank" href="#">Leia a avaliação completa da Pocket-lint</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div class="col-md-6 readmore">
-            <span class="middleicons"><img src="img/iconmiddle2.jpg" /></span>
-            <p class="mini-text">
-              "Câmeras rápidas e de alta resolução, além de uma tela detalhada, deixam
-              a Sony pronta para encarar a Apple."<br />
-              <a target="_blank" href="#">Leia a avaliação completa do Xperia Z5</a>
-            </p>
+          <div class="col-md-6 readmore read2">
+            <table>
+              <tr class="noborder">
+                <td>
+                  <span class="middleicons"><img src="img/iconmiddle2.jpg" /></span>
+                </td>
+                <td>
+                  <p class="mini-text">
+                    "Câmeras rápidas e de alta resolução, além de uma tela detalhada, deixam
+                    a Sony pronta para encarar a Apple."<br />
+                    <a target="_blank" href="#">Leia a avaliação completa do Xperia Z5</a>
+                  </p>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div><!--.container-->
@@ -216,7 +243,7 @@
             </p>
             <a target="_blank" href="#"><strong>Saiba mais sobre nossas telas</strong></a>
           </div>
-          <div class="col-md-4 middletext">
+          <div class="col-md-4 middletext bluebottom">
             <span><img src="img/bottomicon3.jpg" /></span>
             <h4><strong>Jogue em qualquer lugar</strong></h4>
             <p>
@@ -227,7 +254,7 @@
           </div>
         </div>
       </div><!--.icons-bottom-->
-      <h3><strong>ESPECIFICAÇÕES</strong></h3>
+      <h3 id="especificacoes"><strong>ESPECIFICAÇÕES</strong></h3>
       <div class="line">
       </div>
       <div class="row bottom">
@@ -290,6 +317,11 @@
           </table>
         </div>
       </div><!--.bottom-->
+      <div class="finalbottom">
+        <a href="#" target="_blank">Especificações completas</a>
+      </div>
     </div><!--.container-->
+    <footer>
+    </footer>
   </body>
 </html>
