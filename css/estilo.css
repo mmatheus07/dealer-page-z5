@@ -194,20 +194,50 @@ div.anchor {
   margin-bottom: 70px;
 }
 
-div.finalbottom a {
-  color: #ffffff;
-  padding: 15px;
-  background-color: #5085fa;
-}
-
 footer {
-  height: 84px;
   background-color: #000000;
 }
 
-div.finalbottom {
+td.foot {
+  padding: 7px 0;
+}
+
+button.finalbottom {
   margin-top: 50px;
   margin-bottom: 60px;
+  background-color: #5085fa;
+  color: #ffffff;
+  padding: 15px;
+  border: 0;
+}
+
+p.segue {
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+footer a {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+a.iconsocial {
+  margin: 0;
+}
+
+p.copy {
+  font-size: 11px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+table.darkgray {
+  background-color: #1f1f1f;
+}
+
+tr.noline {
+  border-bottom: 0;
 }
 
 @media screen and (max-width: 991px) {
@@ -239,5 +269,8 @@ div.finalbottom {
   }
   div.bluebottom {
     margin-top: 50px;
+  }
+  footer {
+    padding-top: 10px;
   }
 }
